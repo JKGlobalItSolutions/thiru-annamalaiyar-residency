@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm Arunachala-inspired palette */
+    --background: 30 60% 98%;
+    --foreground: 25 10% 16%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 25 10% 16%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 10% 16%;
+    
+    /* Temple gold brown */
+    --primary: 28 45% 37%;
+    --primary-foreground: 30 60% 98%;
+    
+    --secondary: 30 20% 94%;
+    --secondary-foreground: 25 10% 16%;
+    
+    --muted: 30 15% 92%;
+    --muted-foreground: 25 8% 42%;
+    
+    --accent: 28 35% 45%;
+    --accent-foreground: 30 60% 98%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 28 45% 37%;
+    
+    --radius: 1.25rem;
+    
+    /* Custom colors */
+    --hero-gradient-start: 350 70% 91%;
+    --hero-gradient-end: 28 75% 79%;
+    --text-charcoal: 25 10% 16%;
+    --text-muted-brown: 25 8% 39%;
+    --gold-hover: 28 40% 46%;
+    
+    /* Sidebar defaults */
+    --sidebar-background: 30 60% 98%;
+    --sidebar-foreground: 25 10% 16%;
+    --sidebar-primary: 28 45% 37%;
+    --sidebar-primary-foreground: 30 60% 98%;
+    --sidebar-accent: 30 20% 94%;
+    --sidebar-accent-foreground: 25 10% 16%;
+    --sidebar-border: 30 20% 88%;
+    --sidebar-ring: 28 45% 37%;
+  }
+
+  .dark {
+    --background: 25 15% 10%;
+    --foreground: 30 20% 95%;
+    --card: 25 12% 14%;
+    --card-foreground: 30 20% 95%;
+    --popover: 25 12% 14%;
+    --popover-foreground: 30 20% 95%;
+    --primary: 28 50% 55%;
+    --primary-foreground: 25 15% 10%;
+    --secondary: 25 10% 20%;
+    --secondary-foreground: 30 20% 95%;
+    --muted: 25 10% 20%;
+    --muted-foreground: 30 15% 65%;
+    --accent: 28 40% 50%;
+    --accent-foreground: 25 15% 10%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 25 10% 25%;
+    --input: 25 10% 25%;
+    --ring: 28 50% 55%;
+    --sidebar-background: 25 12% 12%;
+    --sidebar-foreground: 30 20% 95%;
+    --sidebar-primary: 28 50% 55%;
+    --sidebar-primary-foreground: 25 15% 10%;
+    --sidebar-accent: 25 10% 18%;
+    --sidebar-accent-foreground: 30 20% 95%;
+    --sidebar-border: 25 10% 20%;
+    --sidebar-ring: 28 50% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--hero-gradient-start)) 0%,
+      hsl(var(--hero-gradient-end)) 50%,
+      hsl(var(--hero-gradient-start)) 100%
+    );
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+  }
+  
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50 shadow-lg;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium
+           transition-all duration-300 hover:bg-accent hover:shadow-lg
+           hover:shadow-primary/20 hover:-translate-y-0.5;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-lg
+           font-medium transition-all duration-300 hover:bg-primary hover:text-primary-foreground;
+  }
+  
+  .section-heading {
+    @apply text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-foreground
+           tracking-tight leading-tight;
+  }
+  
+  .section-subheading {
+    @apply text-muted-foreground text-lg md:text-xl max-w-2xl leading-relaxed;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+  }
+  
+  .icon-hover {
+    @apply transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110;
+  }
+  
+  .image-zoom {
+    @apply transition-transform duration-500 hover:scale-110;
+  }
+  
+  .link-underline {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 
+           after:w-0 after:bg-primary after:transition-all after:duration-300
+           hover:after:w-full;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fade-up 0.8s ease-out forwards;
+  }
+  
+  .animate-fade-up-delay {
+    animation: fade-up 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+  
+  .animate-fade-up-delay-2 {
+    animation: fade-up 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+  }
+  
+  .animate-count-up {
+    animation: count-up 2s ease-out forwards;
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes count-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
