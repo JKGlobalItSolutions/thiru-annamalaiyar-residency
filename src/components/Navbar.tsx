@@ -80,10 +80,12 @@ export function Navbar() {
             <span className="text-sm font-medium">+91 94886 42823</span>
           </a>
           <Button
-            onClick={() => scrollToSection("#contact")}
+            asChild
             className="btn-primary"
           >
-            Book Now
+            <a href="https://jkglobalitsolutions.github.io/Thiruannamalaiyar-website-dynamic-link/" target="_blank" rel="noopener noreferrer">
+              Book Now
+            </a>
           </Button>
         </div>
 
@@ -123,10 +125,12 @@ export function Navbar() {
               <span>+91 94886 42823</span>
             </a>
             <Button
-              onClick={() => scrollToSection("#contact")}
+              asChild
               className="btn-primary w-full"
             >
-              Book Now
+              <a href="https://jkglobalitsolutions.github.io/Thiruannamalaiyar-website-dynamic-link/" target="_blank" rel="noopener noreferrer">
+                Book Now
+              </a>
             </Button>
           </div>
         </div>

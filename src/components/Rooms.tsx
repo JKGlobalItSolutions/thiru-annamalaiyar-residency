@@ -41,12 +41,6 @@ function RoomCard({ room }: { room: typeof rooms[0] }) {
     setCurrentImage((prev) => (prev - 1 + room.images.length) % room.images.length);
   };
 
-  const scrollToContact = () => {
-    const element = document.querySelector("#contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <div className="group bg-card rounded-2xl border border-border/50 shadow-card overflow-hidden card-hover">
@@ -124,8 +118,10 @@ function RoomCard({ room }: { room: typeof rooms[0] }) {
           ))}
         </div>
 
-        <Button onClick={scrollToContact} className="btn-primary w-full">
-          Book Now
+        <Button asChild className="btn-primary w-full">
+          <a href="https://jkglobalitsolutions.github.io/Thiruannamalaiyar-website-dynamic-link/" target="_blank" rel="noopener noreferrer">
+            Book Now
+          </a>
         </Button>
       </div>
     </div>

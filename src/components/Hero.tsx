@@ -52,12 +52,19 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="animate-fade-up-delay-2 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button
-              onClick={() => scrollToSection("#contact")}
-              className="btn-primary text-lg px-8 py-6"
-            >
-              Book Your Stay
-            </Button>
+           <Button
+  onClick={() =>
+    window.open(
+      "https://jkglobalitsolutions.github.io/Thiruannamalaiyar-website-dynamic-link/",
+      "_blank",
+      "noopener,noreferrer"
+    )
+  }
+  className="btn-primary text-lg px-8 py-6"
+>
+  Book Your Stay
+</Button>
+
             <a href="tel:+919488642823">
               <Button
                 variant="outline"
