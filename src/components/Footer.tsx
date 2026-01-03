@@ -121,7 +121,7 @@ export function Footer() {
                   href="mailto:info@thiruannamalaiyar.com"
                   className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
                 >
-                  info@thiruannamalaiyar.com
+                  thiruannamalaiyarresidency@gmail.com
                 </a>
               </li>
             </ul>

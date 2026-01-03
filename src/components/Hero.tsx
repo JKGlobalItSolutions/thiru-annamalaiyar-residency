@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
-import heroImage from "@/assets/temple.png";
+import heroImage from "@/assets/hero.png";
 
 export function Hero() {
   const scrollToSection = (id: string) => {
@@ -39,19 +39,19 @@ export function Hero() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="animate-fade-up text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-semibold text-foreground leading-tight mb-6 drop-shadow-lg">
+          {/* <h1 className="animate-fade-up text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-semibold text-foreground leading-tight mb-6 drop-shadow-lg">
             Stay in Serenity at the
             <span className="block text-primary mt-2">Foot of Arunachala</span>
-          </h1>
+          </h1> */}
 
           {/* Subheading */}
-          <p className="animate-fade-up-delay text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-md">
+          {/* <p className="animate-fade-up-delay text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-md">
             Peaceful rooms, divine surroundings, and warm hospitality
             near Arunachala Temple, Tiruvannamalai.
-          </p>
+          </p> */}
 
           {/* CTA Buttons */}
-          <div className="animate-fade-up-delay-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+          {/* <div className="animate-fade-up-delay-2 flex flex-col sm:flex-row items-center justify-center gap-4">
            <Button
   onClick={() =>
     window.open(
@@ -74,7 +74,7 @@ export function Hero() {
                 Call Now
               </Button>
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* Scroll indicator */}
