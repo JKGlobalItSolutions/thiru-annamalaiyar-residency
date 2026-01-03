@@ -117,7 +117,7 @@ export function Contact() {
             {/* Map */}
             <div className="rounded-2xl overflow-hidden h-64 border border-border/50">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.9442!2d79.0664!3d12.2304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDEzJzQ5LjQiTiA3OcKwMDMnNTkuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d579.634649102379!2d79.07156056646136!3d12.227847286756383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bacc11a7f66ebf3%3A0x816f5208644b3604!2sThiru%20Annamalaiyar%20Residency!5e0!3m2!1sen!2sin!4v1767436623450!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
