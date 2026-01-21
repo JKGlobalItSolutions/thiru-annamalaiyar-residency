@@ -97,7 +97,7 @@ export function Contact() {
                   <div>
                     <h4 className="font-semibold mb-1">Check-in / Check-out</h4>
                     <p className="text-muted-foreground">
-                      Check-in: 12:00 PM | Check-out: 11:00 AM
+                      Check-in: 12:00 PM | Check-out: 12:00 PM
                     </p>
                   </div>
                 </div>
@@ -209,7 +209,7 @@ export function Contact() {
                   className="w-full h-12 rounded-xl border border-input bg-background px-4 text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                 >
                   <option value="standard">Standard Room - ₹2,500/night</option>
-                  <option value="deluxe">Deluxe Room - ₹3,500/night</option>
+                  <option value="deluxe">Deluxe Room - ₹4,000/night</option>
                 </select>
               </div>
 

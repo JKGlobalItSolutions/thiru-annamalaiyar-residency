@@ -6,7 +6,7 @@ import roomStandard from "@/assets/room-standard3.jpeg";
 import templeView from "@/assets/room-deluxe3.jpeg";
 
 const stats = [
-  { icon: Building2, value: 22, suffix: "+", label: "Premium Rooms" },
+  { icon: Building2, value: 30, suffix: "+", label: "Premium Rooms" },
   { icon: MapPin, value: 5, suffix: " min", label: "Walk to Temple" },
   { icon: Clock, value: 24, suffix: "/7", label: "Support" },
   { icon: Users, value: 100, suffix: "%", label: "Family Friendly" },
