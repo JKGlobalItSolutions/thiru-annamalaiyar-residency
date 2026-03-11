@@ -83,7 +83,7 @@ export function Navbar() {
             asChild
             className="btn-primary"
           >
-            <a href="https://jkglobalitsolutions.github.io/Thiruannamalaiyar-website-dynamic-link/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.bookingengine.sonachala.com/#/hotels/thiru-arunachala-residency" target="_blank" rel="noopener noreferrer">
               Book Now
             </a>
           </Button>
@@ -128,7 +128,7 @@ export function Navbar() {
               asChild
               className="btn-primary w-full"
             >
-              <a href="https://jkglobalitsolutions.github.io/Thiruannamalaiyar-website-dynamic-link/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.bookingengine.sonachala.com/#/hotels/thiru-arunachala-residency" target="_blank" rel="noopener noreferrer">
                 Book Now
               </a>
             </Button>

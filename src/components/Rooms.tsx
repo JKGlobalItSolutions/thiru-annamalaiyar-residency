@@ -10,7 +10,7 @@ import hotelLobby from "@/assets/hotel-lobby.jpg";
 const rooms = [
   {
     name: "Standard Room",
-    price: "₹2,500",
+    // price: "₹2,500",
     priceNote: "per night",
     size: "250 sq ft",
     bed: "Queen Bed",
@@ -20,7 +20,7 @@ const rooms = [
   },
   {
     name: "Deluxe Room",
-    price: "₹4,000",
+    // price: "₹4,000",
     priceNote: "per night",
     size: "350 sq ft",
     bed: "King Bed",
@@ -85,7 +85,7 @@ function RoomCard({ room }: { room: typeof rooms[0] }) {
         <div className="flex items-start justify-between mb-4">
           <h3 className="font-serif text-2xl font-semibold text-foreground">{room.name}</h3>
           <div className="text-right">
-            <span className="text-2xl font-serif font-semibold text-primary">{room.price}</span>
+            {/* <span className="text-2xl font-serif font-semibold text-primary">{room.price}</span> */}
             <span className="text-sm text-muted-foreground block">{room.priceNote}</span>
           </div>
         </div>
@@ -119,7 +119,7 @@ function RoomCard({ room }: { room: typeof rooms[0] }) {
         </div>
 
         <Button asChild className="btn-primary w-full">
-          <a href="https://jkglobalitsolutions.github.io/Thiruannamalaiyar-website-dynamic-link/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.bookingengine.sonachala.com/#/hotels/thiru-arunachala-residency" target="_blank" rel="noopener noreferrer">
             Book Now
           </a>
         </Button>

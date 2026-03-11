@@ -1,8 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import heroImage from "@/assets/hero.png";
+import mobileHeroImage from "@/assets/mobile-herosection.JPG";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export function Hero() {
+  const isMobile = useIsMobile();
+  const currentHeroImage = isMobile ? mobileHeroImage : heroImage;
   const scrollToSection = (id: string) => {
     const element = document.querySelector(id);
     if (element) {
@@ -18,7 +22,7 @@ export function Hero() {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: `url(${currentHeroImage})` }}
       />
       
       {/* Gradient Overlay */}
